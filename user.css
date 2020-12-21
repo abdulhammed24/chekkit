@@ -138,9 +138,12 @@ a:hover {
     z-index: 25;
   }
 
-.nav-logo{
-  margin: 0 10px 0 0;
-}
+  .nav-logo {
+    margin: 0 10px 0 0;
+      filter: brightness(0) invert(1);
+      height: 25px;
+      width: 40px;
+  }
 
 .navbar-nav{
   width: 100%;
@@ -148,6 +151,7 @@ a:hover {
 
   .navbar-name {
     margin: 0 10px 0 10px;
+    font-size: 12px;
   }
 
 
