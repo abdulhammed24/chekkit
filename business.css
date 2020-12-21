@@ -564,7 +564,7 @@ a:hover {
   display: flex;
   margin: 20px 0;
   flex-wrap: wrap;
-justify-content: center;
+  justify-content: center;
 }
 
 .footer-text>a {
