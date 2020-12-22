@@ -32,7 +32,6 @@ a:hover {
 }
 
 .nav-logo {
-  filter: brightness(0) invert(1);
   height: 40px;
   width: 60px;
   margin: 0 10px;
@@ -134,7 +133,6 @@ a:hover {
 @media screen and (max-width: 991px) {
   .nav-logo {
     margin: 0 10px 0 0;
-    filter: brightness(0) invert(1);
     height: 25px;
     width: 40px;
   }
