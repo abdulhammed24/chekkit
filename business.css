@@ -153,6 +153,10 @@ a:hover {
     justify-content: flex-start;
   }
 
+  .nav-item{
+    margin: 5px 0;
+  }
+
   .navbar-dark .navbar-nav .nav-link {
     margin: 0;
   }
@@ -298,7 +302,7 @@ a:hover {
 /* HERO SECTION  */
 /* SUMMARY SECTION */
 .summary {
-  background-color: #00000012;
+  background-color: #fff;
   padding: 70px 0;
 }
 
@@ -323,19 +327,19 @@ a:hover {
 }
 
 .summary-detail {
-  border-left: 2px solid #be97f1cc;
+  border-left: 2px solid #bfc0ec;
   padding-left: 30px;
   transition: all 0.4s ease-in-out;
 }
 
 .summary-detail-2 {
-  border-left: 2px solid #99e1ec;
+  border-left: 2px solid #9dd7e1;
   padding-left: 30px;
   transition: all 0.4s ease-in-out;
 }
 
 .summary-detail-3 {
-  border-left: 2px solid #b9d9b9;
+  border-left: 2px solid #acdecb;
   padding-left: 30px;
   transition: all 0.4s ease-in-out;
 }
@@ -365,7 +369,7 @@ a:hover {
 }
 
 .summary-detail-header {
-  color: #ada2f0;
+  color: #bfc0ec;
 }
 
 .summary-detail-header>span {
@@ -374,7 +378,7 @@ a:hover {
 }
 
 .summary-detail-header-2 {
-  color: #7cd3e1;
+  color: #9dd7e1;
 }
 
 .summary-detail-header-2>span {
@@ -383,7 +387,7 @@ a:hover {
 }
 
 .summary-detail-header-3 {
-  color: #81d3b4;
+  color: #acdecb;
 }
 
 .summary-detail-header-3>span {
@@ -450,13 +454,10 @@ a:hover {
 /* SUMMARY SECTION */
 /* OPTION SECTION */
 .option {
-  background-color: #fff;
+  background-color: #e9f7f7;
   padding: 70px 0;
 }
 
-.option-container {
-  padding: 0 90px;
-}
 
 .option-row, .option-row-2, .option-row-3, .option-row-4 {
   padding: 50px 0;
@@ -496,7 +497,8 @@ a:hover {
 
 @media screen and (max-width: 991px) {
   .option-container {
-    padding: 0 35px;
+    padding: 0 30px;
+    max-width: 90rem;
   }
 }
 
@@ -519,6 +521,123 @@ a:hover {
 }
 
 /* OPTION SECTION */
+
+
+/* TESTIMONIAL SECTION */
+.testimonial {
+  background-color: #fff;
+  padding: 70px 0;
+}
+
+.testimonial-header {
+  font-size: 35px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: normal;
+  margin-bottom: 30px;
+}
+
+
+.testimonial-content{
+  display: flex;
+}
+
+.right{
+  background-color: #46F7AD;
+  padding: 20px;
+  display: flex;
+flex-direction: column;
+border-top-right-radius: 0.75rem;
+border-top-left-radius: 0.75rem;
+border-bottom-right-radius: 3.75rem;
+border-bottom-left-radius: 0.75rem;
+}
+
+.testimonial-img{
+  height: 30px;
+  display: flex;
+  align-self: flex-start;
+  margin: 20px 0;
+}
+
+.right-header{
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: normal;
+  margin: 20px 0;
+}
+
+.right-sub{
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: normal;
+  margin-bottom: 10px;
+}
+
+.right-sub-2{
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: normal;
+  margin-bottom: 10px;
+}
+
+
+.carousel-control-prev-icon {
+  background-image: url(img/business/left.svg);
+  position: absolute;
+    left:  -10px;
+}
+
+.carousel-control-next-icon {
+  background-image: url(img/business/right.svg);
+  position: absolute;
+    right: -10px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 991px){
+  .testimonial-container {
+    padding: 0 30px;
+    max-width: 90rem;
+  }
+
+  .testimonial-header {
+    font-size: 20px;
+  }
+
+
+  .right-header{
+    font-size: 20px;
+  }
+
+  .right-sub{
+    font-size: 15px;
+}
+
+  .right-sub-2{
+    font-size: 12px;
+  }
+}
+
+/* TESTIMONIAL SECTION */
+
+
 /* FOOTER SECTION */
 .footer {
   background-color: black;
@@ -602,10 +721,16 @@ a:not([href]):not([class]):hover {
   color: #a2a3a5;
 }
 
+@media screen and (max-width: 991px) {
+  .footer-container {
+    padding: 0 30px;
+    max-width: 90rem;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .footer {
     background-color: black;
-    padding: 35px 0;
   }
 
   .footer-row {
@@ -620,6 +745,7 @@ a:not([href]):not([class]):hover {
   .footer-content {
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
 
   .footer-text {
