@@ -701,6 +701,14 @@ a:hover {
 
 @media screen and (max-width: 767px){
 
+  .right{
+    padding: 5px 50px;
+  }
+
+  .left{
+    padding: 5px 50px;
+  }
+
   .testimonial-container {
     padding: 0 30px;
     max-width: 45rem;
@@ -710,6 +718,11 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
+
+}
+
+@media screen and (max-width: 480px){
+
 
 
 }
