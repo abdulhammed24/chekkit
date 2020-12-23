@@ -747,7 +747,7 @@ a:hover {
 }
 
 .cta-img {
-  max-width: 120%;
+  max-width: 110%;
   height: auto;
 }
 
@@ -857,6 +857,27 @@ a:hover {
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .cta-img {
+    width: 120%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 382px) {
+  .cta-button {
+display: flex;
+flex-direction: column;
+  }
+
+
+  .cta-btn-2 {
+    margin-left: 0px;
+  }
+}
+
+
 
 /* CTA SECTION */
 /* FOOTER SECTION */
