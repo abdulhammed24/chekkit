@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -256,7 +256,6 @@ a:hover {
 
 /* ============ desktop view .end// ============ */
 /* HEADER SECTION */
-
 /* HERO SECTION  */
 .hero {
   background: url(img/business/home.jpg) no-repeat center center;
@@ -268,6 +267,7 @@ a:hover {
   width: 100%;
   display: flex;
   align-items: center;
+  margin-top: 45px;
 }
 
 .hero-content {
@@ -488,7 +488,7 @@ a:hover {
   letter-spacing: normal;
 }
 
-.option-btn{
+.option-btn {
   border: 1px solid #46F7AD;
   background-color: #46F7AD;
   font-size: 15px;
@@ -509,7 +509,6 @@ a:hover {
   color: #46F7AD;
   transition: all 0.5s ease;
 }
-
 
 .option-img {
   max-width: 100%;
@@ -542,6 +541,8 @@ a:hover {
 }
 
 /* OPTION SECTION */
+
+
 /* TESTIMONIAL SECTION */
 .testimonial {
   background-color: #fff;
@@ -868,17 +869,14 @@ a:hover {
 
 @media screen and (max-width: 382px) {
   .cta-button {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
-
 
   .cta-btn-2 {
     margin-left: 0px;
   }
 }
-
-
 
 /* CTA SECTION */
 
@@ -887,12 +885,13 @@ flex-direction: column;
 .footer {
   background-color: black;
   padding: 70px 0;
+  display: flex;
 }
 
-.footer-image{
+.footer-image {
   display: flex;
   justify-content: center;
-  margin: 20px 0 50px 0;
+  margin: 30px 0;
 }
 
 .footer-logo {
@@ -989,11 +988,16 @@ a:not([href]):not([class]):hover {
     background-color: black;
   }
 
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .footer-row {
     display: none;
   }
 
-  .footer-image{
+  .footer-image {
     margin: 0;
   }
 
@@ -1007,6 +1011,7 @@ a:not([href]):not([class]):hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    order: 2;
   }
 
   .footer-text {
