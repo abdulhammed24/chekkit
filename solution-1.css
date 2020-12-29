@@ -258,8 +258,7 @@ a:hover {
 /* HEADER SECTION */
 /* HERO SECTION */
 .hero {
-  background: rgb(13,21,55);
-  background: radial-gradient(circle, rgba(13,21,55,1) 0%, rgba(6,12,38,1) 55%, rgba(13,21,55,1) 100%);
+  background: linear-gradient(90deg, #002b44, #000000);
   display: flex;
   align-items: center;
   padding: 80px 0;
