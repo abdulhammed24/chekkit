@@ -80,12 +80,6 @@ a:hover {
 }
 
 @media screen and (max-width: 991px) {
-  .navbar{
-    position: absolute;
-    width: 100%;
-    z-index: 25;
-  }
-
   .nav-logo {
     margin: 0 10px 0 0;
       height: 25px;
