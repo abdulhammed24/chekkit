@@ -212,146 +212,161 @@ padding-left:  50px;
 }
 /* MAIN SECTION */
 
+
 /* FOOTER SECTION */
-.footer {
+.footer{
   background-color: black;
-  padding: 70px 0;
-  display: flex;
+  padding: 70px 0 10px;
 }
 
-.footer-image {
-  display: flex;
-  justify-content: center;
-  margin: 30px 0;
+.footer-content-1{
+  display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+    margin: 30px 0;
 }
 
-.footer-logo {
-  height: auto;
-  width: 80px;
+.footer-content-2{
+  display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 50px;
+    margin: 30px 0;
 }
 
-.footer-header {
+.footer-logo{
+    height: 50px;
+    width: 80px;
+}
+
+.footer-mobile-logo{
+  display: none;
+}
+
+.footer-mobile-icon{
+  display: none;
+}
+
+.footer-header{
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.3;
   letter-spacing: normal;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.footer-sub {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-sub>a {
-  color: #a2a3a5;
+.footer-sub{
+  color: #fff;
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 1.3;
+  line-height: 2;
   letter-spacing: normal;
-  margin-bottom: 16px;
+  margin: 20px 0;
 }
 
-.footer-content {
-  margin: 20px 0;
+.footer-icon{
   display: flex;
   align-items: center;
-  width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
-.footer-text {
+.footer-icon>a{
+  color: #46F7AD;
+  margin-right: 15px;
+  transition: all 0.4s ease;
+}
+
+.footer-detail{
   display: flex;
-  margin: 20px 0;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
 }
 
-.footer-text>a {
-  color: #a2a3a5;
+.footer-img{
+width: 30px;
+height: auto;
+margin-right: 15px;
+}
+
+.footer-detail>i{
+  color: #46F7AD;
+  margin-right: 15px;
+}
+
+.footer-text{
+  color: #fff;
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.3;
   letter-spacing: normal;
-  padding: 0 15px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width:991px){
+  .footer-container{
+    max-width: 90rem;
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width:768px){
+  .footer-content-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-gap: 0;
+  }
+
+.footer-content-1> .footer-column{
+  display: none;
+}
+
+.footer-header{
+  color: #a2a3a5;
+  font-size: 15px;
+  margin: 0;
+}
+
+.footer-sub{
+  color: #a2a3a5;
+  font-size: 12px;
+}
+
+.footer-mobile-logo{
+  height: 50px;
+  width: 80px;
+  display: flex;
+}
+
+.footer-mobile-icon{
+  display: flex;
+  margin-top: 30px;
+}
+
+.footer-mobile-icon>a{
+margin: 0 10px;
+color: #a2a3a5;
+}
+
+
+.footer-content-2{
+margin-top: 50px;
+}
+
+.footer-text{
+  color: #a2a3a5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
   text-align: center;
 }
-
-.footer-icon {
-  display: flex;
-  margin: 20px 0;
 }
 
-.footer-img {
-  margin: 0 10px;
-  transition: all 0.4s ease;
-}
-
-.footer-img:hover {
-  color: #a2a3a5;
-  transition: all 0.4s ease;
-}
-
-a:not([href]):not([class]) {
-  color: #a2a3a5;
-  text-decoration: none;
-}
-
-a:not([href]):not([class]):hover {
-  color: #a2a3a5;
-}
-
-@media screen and (max-width: 991px) {
-  .footer-container {
-    padding: 0 30px;
-    max-width: 90rem;
+@media screen and (max-width: 480px){
+  .footer-content-2{
+    display: grid;
+      grid-template-columns:1fr;
+      grid-gap: 20px;
   }
 }
-
-@media screen and (max-width: 767px) {
-  .footer {
-    background-color: black;
-  }
-
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer-row {
-    display: none;
-  }
-
-  .footer-image {
-    margin: 0;
-  }
-
-  .footer-text>a {
-    padding: 10px;
-    text-align: center;
-    font-size: 12px;
-  }
-
-  .footer-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    order: 2;
-  }
-
-  .footer-text {
-    margin: 20px 0;
-  }
-
-  .footer-icon {
-    margin: 20px 0;
-  }
-}
-
 /* FOOTER SECTION */
