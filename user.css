@@ -286,7 +286,7 @@ a:hover {
   color: #002B44;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 35px;
+  font-size: 50px;
   font-weight: 500;
   line-height: 1.3;
   letter-spacing: normal;
@@ -297,7 +297,7 @@ a:hover {
   color: #002B44;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 1.3;
   letter-spacing: normal;
@@ -306,6 +306,12 @@ a:hover {
 @media screen and (max-width:991px) {
   .story {
     height: 50vh;
+  }
+  .story-header{
+    font-size: 35px;
+  }
+  .story-sub{
+    font-size: 15px;
   }
 }
 
