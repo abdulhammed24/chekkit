@@ -407,10 +407,11 @@ a:hover {
 .team-column {
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 1px 2px 1px black;
+  box-shadow: 1px 1px 2px 1px #dcd2d2;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
   padding: 20px;
+  background-color: #fff;
 }
 
 .team-image{
@@ -516,10 +517,11 @@ border-radius: 50%;
 .advisor-column {
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 1px 2px 1px black;
+  box-shadow: 1px 1px 2px 1px #dcd2d2;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
   padding: 20px;
+  background-color: #fff;
 }
 
 .advisor-image{
@@ -609,13 +611,7 @@ border-radius: 50%;
 .record-column {
   display: flex;
   flex-direction: column;
-  box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12);
+box-shadow:1px 1px 10px 2px #b5b0b0;
   padding: 20px;
   justify-content: center;
 align-items: center;
@@ -633,7 +629,7 @@ align-items: center;
 
 .record-content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 50px;
   margin-top: 50px;
 }
